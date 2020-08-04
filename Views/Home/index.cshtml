@@ -1,0 +1,20 @@
+@model List<ArticleListModel>
+@if(ViewBag.ActiveCategory!=null){
+@await Component.InvokeAsync("GetCategoryName",new {@categoryId=(int)ViewBag.ActiveCategory})
+}
+
+@foreach (var article in Model)
+{
+    <div class="card mb-4">
+          <getblogimage id="@article.ArticleId"></getblogimage>
+          <div class="card-body">
+            <h2 class="card-title">@article.Title</h2>
+            <p class="card-text">@article.ShortDescription</p>
+            <a asp-action="BlogDetail" asp-route-id="@article.ArticleId" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on @article.PostedTime.ToLongDateString()
+          </div>
+          
+ </div>
+}

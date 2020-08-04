@@ -1,0 +1,26 @@
+@model List<ArticleListModel>
+
+<a asp-action="Create" asp-controller="Article"  class="btn btn-outline-info btn-sm my-2">New Blog Write</a>
+<table class="table table-bordered table-hover table-sm">
+    <tbody>
+        <tr>
+            <th>Tittle</th>
+            <th>Category Operations</th>
+            <th>Operations</th>
+        </tr>
+        @foreach (var blog in Model)
+        {
+            <tr>
+                <td>@blog.Title</td>
+                <td>
+                    <a asp-action="AssignCategory" asp-route-id="@blog.ArticleId" >Category Add</a>
+                </td>             
+                <td>
+                    <a asp-action="Update" asp-route-id="@blog.ArticleId" class="btn btn-warning btn-sm">Update</a>
+                    <a asp-action="Delete" asp-route-id="@blog.ArticleId" class="btn btn-danger btn-sm">Remove</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

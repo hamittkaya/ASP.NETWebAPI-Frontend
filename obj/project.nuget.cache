@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xtNSsk8UTIUsK0hXQOVgiFkfYBdegkg2sC+u3bUuF8Yxy31OzunVOn8UZwJFGBBaNs3rslV/VyT7/W76V05cxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ceren\\Desktop\\BlogFrontend\\BlogFrontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ceren\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
