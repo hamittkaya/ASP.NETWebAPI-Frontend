@@ -1,2 +1,2 @@
 # ASP.NETWebAPI-Frontend
-I used frontend for Visual Studio Code
+I used frontend for Html,Css,JavaScript and Jquery
