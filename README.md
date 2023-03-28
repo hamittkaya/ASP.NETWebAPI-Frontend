@@ -1,2 +1,2 @@
 # ASP.NETWebAPI-Frontend
-I used frontend for Html,Css,JavaScript and Jquery
+Html,Css,JavaScript and Jquery were used in the frontend.
